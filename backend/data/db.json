@@ -1,0 +1,678 @@
+{
+  "users": [
+    {
+      "_id": "ecd38f60ec1798e13c4df1a7",
+      "name": "Rahul Sharma",
+      "email": "test_student_1792082569111@college.edu",
+      "password": "$2a$10$xsDTqI8PlmnjPaFtRAZRGuw7oxdCMoXCH96UPCDVhVkHRMDvfSxtK",
+      "college": "IIT Delhi",
+      "monthlyAllowance": 8000,
+      "pocketMoneyDay": 1,
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "themePreference": "dark",
+      "createdAt": "2026-10-15T16:42:49.842Z",
+      "updatedAt": "2026-10-15T16:42:49.842Z"
+    },
+    {
+      "_id": "da2f4373c8636c37b983e9a5",
+      "name": "Rahul Sharma",
+      "email": "test_student_1792082604945@college.edu",
+      "password": "$2a$10$Hn8GAJTU7z5RPJ19NgwxHuFbdFoAtQWv9IR9uof/Uwk7epg17NIeG",
+      "college": "IIT Delhi",
+      "monthlyAllowance": 8000,
+      "pocketMoneyDay": 1,
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "themePreference": "dark",
+      "createdAt": "2026-10-15T16:43:24.992Z",
+      "updatedAt": "2026-10-15T16:43:24.992Z"
+    },
+    {
+      "_id": "3e81af056ec3f561d65fa0b9",
+      "name": "Rahul Sharma",
+      "email": "test_student_1793024411877@college.edu",
+      "password": "$2a$10$MRVrSsbH61IxZsylwAjAQulQodmCpYOWVF6yX2/nwDVXqXWbFoo.q",
+      "college": "IIT Delhi",
+      "monthlyAllowance": 8000,
+      "pocketMoneyDay": 1,
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "themePreference": "dark",
+      "createdAt": "2026-10-26T14:20:14.884Z",
+      "updatedAt": "2026-10-26T14:20:14.884Z"
+    },
+    {
+      "_id": "4b6b95a47405c3ca2812eb44",
+      "name": "Rahul Sharma",
+      "email": "test_student_1793105724031@college.edu",
+      "password": "$2a$10$aHBPoXnJ5v3ku5/xkhkcl.OHzPGGhK5y7ZA0zFRiPGBz2Z8zm21la",
+      "college": "IIT Delhi",
+      "monthlyAllowance": 8000,
+      "pocketMoneyDay": 1,
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "themePreference": "dark",
+      "createdAt": "2026-10-27T12:55:29.916Z",
+      "updatedAt": "2026-10-27T12:55:29.916Z"
+    },
+    {
+      "_id": "1ec3289efaf68b559bb4ccaf",
+      "name": "Shailender",
+      "email": "student.demo@college.edu",
+      "password": "$2a$10$UUv9OFJRG0rR3evEYNS4G.5pyiLW5Y5nMCYl8RzWbIGT93idLDyo2",
+      "college": "Poornima university",
+      "monthlyAllowance": 3000,
+      "pocketMoneyDay": 1,
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "themePreference": "dark",
+      "createdAt": "2026-10-27T13:43:34.246Z",
+      "updatedAt": "2026-10-27T13:45:43.249Z"
+    }
+  ],
+  "transactions": [
+    {
+      "_id": "d5997cbae706cc20bb4e0450",
+      "user": "ecd38f60ec1798e13c4df1a7",
+      "title": "Canteen Meals",
+      "amount": 250,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-15T16:42:50.266Z",
+      "paymentMethod": "UPI",
+      "notes": "Thali with friends",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-15T16:42:50.267Z",
+      "updatedAt": "2026-10-15T16:42:50.267Z"
+    },
+    {
+      "_id": "3e778f816fb4355dfc68c045",
+      "user": "da2f4373c8636c37b983e9a5",
+      "title": "Canteen Meals",
+      "amount": 250,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-15T16:43:25.226Z",
+      "paymentMethod": "UPI",
+      "notes": "Thali with friends",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-15T16:43:25.227Z",
+      "updatedAt": "2026-10-15T16:43:25.227Z"
+    },
+    {
+      "_id": "6ae9caa817f7f286c9827394",
+      "user": "3e81af056ec3f561d65fa0b9",
+      "title": "Canteen Meals",
+      "amount": 250,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-26T14:20:15.886Z",
+      "paymentMethod": "UPI",
+      "notes": "Thali with friends",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-26T14:20:15.887Z",
+      "updatedAt": "2026-10-26T14:20:15.887Z"
+    },
+    {
+      "_id": "ac84bacf713a377f632bdf69",
+      "user": "4b6b95a47405c3ca2812eb44",
+      "title": "Canteen Meals",
+      "amount": 250,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-27T12:55:38.666Z",
+      "paymentMethod": "UPI",
+      "notes": "Thali with friends",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-27T12:55:38.666Z",
+      "updatedAt": "2026-10-27T12:55:38.666Z"
+    },
+    {
+      "_id": "f5cede16d19b6d1f6f907d09",
+      "title": "Monthly Pocket Allowance from Parents",
+      "amount": 9000,
+      "type": "income",
+      "category": "Monthly allowance",
+      "paymentMethod": "UPI",
+      "date": "2026-09-30T18:30:00.000Z",
+      "notes": "Received via GPay",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:51.915Z",
+      "updatedAt": "2026-10-27T13:46:51.915Z"
+    },
+    {
+      "_id": "f2342bb96b98ea417e2a81ef",
+      "title": "Merit Scholarship Installment",
+      "amount": 3500,
+      "type": "income",
+      "category": "Scholarship",
+      "paymentMethod": "Net Banking",
+      "date": "2026-10-04T18:30:00.000Z",
+      "notes": "Semester reward scholarship",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:51.932Z",
+      "updatedAt": "2026-10-27T13:46:51.932Z"
+    },
+    {
+      "_id": "51709f3129c79aa77301511e",
+      "title": "Web Design Freelance Project",
+      "amount": 4000,
+      "type": "income",
+      "category": "Freelancing",
+      "paymentMethod": "UPI",
+      "date": "2026-10-11T18:30:00.000Z",
+      "notes": "Landing page for client",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:51.948Z",
+      "updatedAt": "2026-10-27T13:46:51.948Z"
+    },
+    {
+      "_id": "1f8d371941b07805ab42465a",
+      "title": "Hostel Mess Monthly Fees",
+      "amount": 2800,
+      "type": "expense",
+      "category": "Accommodation",
+      "paymentMethod": "UPI",
+      "date": "2026-10-01T18:30:00.000Z",
+      "notes": "October mess dues",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:51.973Z",
+      "updatedAt": "2026-10-27T13:46:51.973Z"
+    },
+    {
+      "_id": "c258e8394afb3d7a55287f0e",
+      "title": "Campus Canteen Lunch & Chai",
+      "amount": 160,
+      "type": "expense",
+      "category": "Food",
+      "paymentMethod": "UPI",
+      "date": "2026-10-02T18:30:00.000Z",
+      "notes": "Thali with classmates",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:51.997Z",
+      "updatedAt": "2026-10-27T13:46:51.997Z"
+    },
+    {
+      "_id": "e4c3ab925023fe7890415a92",
+      "title": "Late Night Pizza & Snacks",
+      "amount": 450,
+      "type": "expense",
+      "category": "Food",
+      "paymentMethod": "UPI",
+      "date": "2026-10-06T18:30:00.000Z",
+      "notes": "Exam study group session",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.017Z",
+      "updatedAt": "2026-10-27T13:46:52.017Z"
+    },
+    {
+      "_id": "b0c6cdd38124f00af9415b79",
+      "title": "Groceries, Milk & Oatmeal",
+      "amount": 620,
+      "type": "expense",
+      "category": "Food",
+      "paymentMethod": "Cash",
+      "date": "2026-10-09T18:30:00.000Z",
+      "notes": "Supermarket purchase",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.033Z",
+      "updatedAt": "2026-10-27T13:46:52.033Z"
+    },
+    {
+      "_id": "a9613d309cefd1fb7352e47f",
+      "title": "Cafe Coffee Day Coffee & Sandwich",
+      "amount": 240,
+      "type": "expense",
+      "category": "Food",
+      "paymentMethod": "Debit Card",
+      "date": "2026-10-13T18:30:00.000Z",
+      "notes": "Assignment work session",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.055Z",
+      "updatedAt": "2026-10-27T13:46:52.055Z"
+    },
+    {
+      "_id": "ab4cafe8243d26465960b142",
+      "title": "Metro Monthly Smart Card Recharge",
+      "amount": 600,
+      "type": "expense",
+      "category": "Transport",
+      "paymentMethod": "UPI",
+      "date": "2026-10-01T18:30:00.000Z",
+      "notes": "Delhi/Bangalore Metro pass",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.072Z",
+      "updatedAt": "2026-10-27T13:46:52.072Z"
+    },
+    {
+      "_id": "776c1ebb7d605dd7c1429e28",
+      "title": "Auto-rickshaw to Railway Station",
+      "amount": 180,
+      "type": "expense",
+      "category": "Transport",
+      "paymentMethod": "Cash",
+      "date": "2026-10-07T18:30:00.000Z",
+      "notes": "Weekend trip to home",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.093Z",
+      "updatedAt": "2026-10-27T13:46:52.093Z"
+    },
+    {
+      "_id": "d05a749bf41af05ce25429c3",
+      "title": "Uber Ride with Friends to Mall",
+      "amount": 120,
+      "type": "expense",
+      "category": "Transport",
+      "paymentMethod": "UPI",
+      "date": "2026-10-12T18:30:00.000Z",
+      "notes": "Split 4 ways",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.112Z",
+      "updatedAt": "2026-10-27T13:46:52.112Z"
+    },
+    {
+      "_id": "ad1b5caa34be24acb83b7fa2",
+      "title": "Data Structures & Algorithms Textbook",
+      "amount": 750,
+      "type": "expense",
+      "category": "Education",
+      "paymentMethod": "UPI",
+      "date": "2026-10-03T18:30:00.000Z",
+      "notes": "Reference book for 5th semester",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.130Z",
+      "updatedAt": "2026-10-27T13:46:52.130Z"
+    },
+    {
+      "_id": "9efb6b6cf6498accfea7f202",
+      "title": "College Lab Record Notebooks & Stationery",
+      "amount": 320,
+      "type": "expense",
+      "category": "Education",
+      "paymentMethod": "Cash",
+      "date": "2026-10-05T18:30:00.000Z",
+      "notes": "Physics and electronics manuals",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.231Z",
+      "updatedAt": "2026-10-27T13:46:52.231Z"
+    },
+    {
+      "_id": "3b00ae8d9b77caf8929c7640",
+      "title": "Udemy Full Stack React & Node Course",
+      "amount": 499,
+      "type": "expense",
+      "category": "Education",
+      "paymentMethod": "Credit Card",
+      "date": "2026-10-08T18:30:00.000Z",
+      "notes": "Festive discount offer",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.247Z",
+      "updatedAt": "2026-10-27T13:46:52.247Z"
+    },
+    {
+      "_id": "fc55c79bc88918fc8a4d47fc",
+      "title": "Netflix & Spotify Student Subscription",
+      "amount": 299,
+      "type": "expense",
+      "category": "Entertainment",
+      "paymentMethod": "UPI",
+      "date": "2026-10-04T18:30:00.000Z",
+      "notes": "Monthly recurring student plan",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.265Z",
+      "updatedAt": "2026-10-27T13:46:52.265Z"
+    },
+    {
+      "_id": "3eff0bda1a7ebebc7d40f56a",
+      "title": "Movie Ticket with Roommates",
+      "amount": 350,
+      "type": "expense",
+      "category": "Entertainment",
+      "paymentMethod": "UPI",
+      "date": "2026-10-10T18:30:00.000Z",
+      "notes": "Weekend IMAX show",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.282Z",
+      "updatedAt": "2026-10-27T13:46:52.282Z"
+    },
+    {
+      "_id": "0d6400d30c52ceabeaadd753",
+      "title": "Laptop Wireless Mouse & Mousepad",
+      "amount": 550,
+      "type": "expense",
+      "category": "Shopping",
+      "paymentMethod": "UPI",
+      "date": "2026-10-07T18:30:00.000Z",
+      "notes": "Logitech silent wireless mouse",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.307Z",
+      "updatedAt": "2026-10-27T13:46:52.307Z"
+    },
+    {
+      "_id": "01069a10000c344d80e637df",
+      "title": "Campus Hoodie & College T-shirt",
+      "amount": 890,
+      "type": "expense",
+      "category": "Shopping",
+      "paymentMethod": "UPI",
+      "date": "2026-10-12T18:30:00.000Z",
+      "notes": "College fest merchandise",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.324Z",
+      "updatedAt": "2026-10-27T13:46:52.324Z"
+    },
+    {
+      "_id": "08e30a839e3a581a4d72b734",
+      "title": "Mobile 5G Data Pack Recharge",
+      "amount": 349,
+      "type": "expense",
+      "category": "Bills",
+      "paymentMethod": "UPI",
+      "date": "2026-10-02T18:30:00.000Z",
+      "notes": "Jio 84 days plan",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.341Z",
+      "updatedAt": "2026-10-27T13:46:52.341Z"
+    },
+    {
+      "_id": "e8a2a6bc0dfef6178bc89ed4",
+      "title": "Medical Clinic Doctor Consultation & Meds",
+      "amount": 420,
+      "type": "expense",
+      "category": "Healthcare",
+      "paymentMethod": "Cash",
+      "date": "2026-10-11T18:30:00.000Z",
+      "notes": "Viral fever medication",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.383Z",
+      "updatedAt": "2026-10-27T13:46:52.383Z"
+    },
+    {
+      "_id": "df90dc7aeced91fe90675d3d",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "title": "eggs",
+      "amount": 50,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-27T00:00:00.000Z",
+      "paymentMethod": "UPI",
+      "notes": "",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-27T13:49:50.817Z",
+      "updatedAt": "2026-10-27T13:49:50.817Z"
+    }
+  ],
+  "budgets": [
+    {
+      "_id": "9b4adc87fd02b26c14263a51",
+      "user": "ecd38f60ec1798e13c4df1a7",
+      "month": "2026-10",
+      "monthlyLimit": 8000,
+      "categoryLimits": [
+        {
+          "category": "Food",
+          "limit": 3200
+        },
+        {
+          "category": "Transport",
+          "limit": 1200
+        },
+        {
+          "category": "Education",
+          "limit": 1200
+        },
+        {
+          "category": "Entertainment",
+          "limit": 800
+        },
+        {
+          "category": "Shopping",
+          "limit": 800
+        },
+        {
+          "category": "Bills",
+          "limit": 800
+        }
+      ],
+      "alertThreshold": 80,
+      "createdAt": "2026-10-15T16:42:50.080Z",
+      "updatedAt": "2026-10-15T16:42:50.080Z"
+    },
+    {
+      "_id": "7721fca28ca277405b2e286b",
+      "user": "da2f4373c8636c37b983e9a5",
+      "month": "2026-10",
+      "monthlyLimit": 8000,
+      "categoryLimits": [
+        {
+          "category": "Food",
+          "limit": 3200
+        },
+        {
+          "category": "Transport",
+          "limit": 1200
+        },
+        {
+          "category": "Education",
+          "limit": 1200
+        },
+        {
+          "category": "Entertainment",
+          "limit": 800
+        },
+        {
+          "category": "Shopping",
+          "limit": 800
+        },
+        {
+          "category": "Bills",
+          "limit": 800
+        }
+      ],
+      "alertThreshold": 80,
+      "createdAt": "2026-10-15T16:43:25.182Z",
+      "updatedAt": "2026-10-15T16:43:25.182Z"
+    },
+    {
+      "_id": "57d55f1516bf31ac3996cf1f",
+      "user": "3e81af056ec3f561d65fa0b9",
+      "month": "2026-10",
+      "monthlyLimit": 8000,
+      "categoryLimits": [
+        {
+          "category": "Food",
+          "limit": 3200
+        },
+        {
+          "category": "Transport",
+          "limit": 1200
+        },
+        {
+          "category": "Education",
+          "limit": 1200
+        },
+        {
+          "category": "Entertainment",
+          "limit": 800
+        },
+        {
+          "category": "Shopping",
+          "limit": 800
+        },
+        {
+          "category": "Bills",
+          "limit": 800
+        }
+      ],
+      "alertThreshold": 80,
+      "createdAt": "2026-10-26T14:20:15.356Z",
+      "updatedAt": "2026-10-26T14:20:15.356Z"
+    },
+    {
+      "_id": "246360bcd70ccb9c2f24f419",
+      "user": "4b6b95a47405c3ca2812eb44",
+      "month": "2026-10",
+      "monthlyLimit": 8000,
+      "categoryLimits": [
+        {
+          "category": "Food",
+          "limit": 3200
+        },
+        {
+          "category": "Transport",
+          "limit": 1200
+        },
+        {
+          "category": "Education",
+          "limit": 1200
+        },
+        {
+          "category": "Entertainment",
+          "limit": 800
+        },
+        {
+          "category": "Shopping",
+          "limit": 800
+        },
+        {
+          "category": "Bills",
+          "limit": 800
+        }
+      ],
+      "alertThreshold": 80,
+      "createdAt": "2026-10-27T12:55:37.207Z",
+      "updatedAt": "2026-10-27T12:55:37.207Z"
+    },
+    {
+      "_id": "f66633a827db65757d0562cc",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "month": "2026-10",
+      "monthlyLimit": 12000,
+      "categoryLimits": [
+        {
+          "category": "Food",
+          "limit": 4500
+        },
+        {
+          "category": "Transport",
+          "limit": 1200
+        },
+        {
+          "category": "Education",
+          "limit": 2000
+        },
+        {
+          "category": "Accommodation",
+          "limit": 3000
+        },
+        {
+          "category": "Shopping",
+          "limit": 1500
+        },
+        {
+          "category": "Entertainment",
+          "limit": 1000
+        },
+        {
+          "category": "Bills",
+          "limit": 800
+        },
+        {
+          "category": "Healthcare",
+          "limit": 800
+        }
+      ],
+      "alertThreshold": 80,
+      "createdAt": "2026-10-27T13:46:52.402Z",
+      "updatedAt": "2026-10-27T13:46:52.402Z"
+    }
+  ],
+  "savingsgoals": [
+    {
+      "_id": "d49e96ce708ef8fac124a922",
+      "title": "New Coding Laptop (M2 / i7)",
+      "targetAmount": 65000,
+      "currentAmount": 28500,
+      "targetDate": "2026-12-30T18:30:00.000Z",
+      "category": "Gadgets",
+      "notes": "Saving for final year project and placement coding",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.420Z",
+      "updatedAt": "2026-10-27T13:46:52.420Z"
+    },
+    {
+      "_id": "fc6f4f4159615d773eaf872d",
+      "title": "Semester Exam & Registration Fee",
+      "targetAmount": 8500,
+      "currentAmount": 6000,
+      "targetDate": "2026-12-14T18:30:00.000Z",
+      "category": "Education",
+      "notes": "Keep in emergency reserve",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.444Z",
+      "updatedAt": "2026-10-27T13:46:52.444Z"
+    },
+    {
+      "_id": "21c275aeb4333cbad331a3e5",
+      "title": "Goa College Road Trip Fund",
+      "targetAmount": 12000,
+      "currentAmount": 4200,
+      "targetDate": "2027-01-09T18:30:00.000Z",
+      "category": "Travel",
+      "notes": "Post-semester vacation with hostel batchmates",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.462Z",
+      "updatedAt": "2026-10-27T13:46:52.462Z"
+    }
+  ],
+  "recurringexpenses": [
+    {
+      "_id": "462be3ebc758fd649cdf41b8",
+      "title": "Hostel Room & Mess Payment",
+      "amount": 2800,
+      "category": "Accommodation",
+      "paymentMethod": "UPI",
+      "frequency": "monthly",
+      "nextDueDate": "2026-10-31T18:30:00.000Z",
+      "isActive": true,
+      "notes": "Pay by 5th to avoid late penalty",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.479Z",
+      "updatedAt": "2026-10-27T13:46:52.479Z"
+    },
+    {
+      "_id": "9679e67b6d88df562840d933",
+      "title": "Hostel High-Speed WiFi Share",
+      "amount": 250,
+      "category": "Bills",
+      "paymentMethod": "UPI",
+      "frequency": "monthly",
+      "nextDueDate": "2026-11-04T18:30:00.000Z",
+      "isActive": true,
+      "notes": "Split among 4 flatmates",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.498Z",
+      "updatedAt": "2026-10-27T13:46:52.498Z"
+    },
+    {
+      "_id": "a2f4657d69beabb8c6e5f258",
+      "title": "Spotify Student Streaming",
+      "amount": 69,
+      "category": "Entertainment",
+      "paymentMethod": "UPI",
+      "frequency": "monthly",
+      "nextDueDate": "2026-11-09T18:30:00.000Z",
+      "isActive": true,
+      "notes": "Verified with college email ID",
+      "user": "1ec3289efaf68b559bb4ccaf",
+      "createdAt": "2026-10-27T13:46:52.558Z",
+      "updatedAt": "2026-10-27T13:46:52.558Z"
+    }
+  ]
+}
