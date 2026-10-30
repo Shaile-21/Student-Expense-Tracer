@@ -50,6 +50,15 @@ const connectDB = async () => {
 
   const isLocal = uri.includes('127.0.0.1') || uri.includes('localhost');
 
+  if (process.env.VERCEL && (!process.env.MONGODB_URI || isLocal)) {
+    console.log('[DB] Running on Vercel Serverless. Activating JSON DB in /tmp.');
+    dbState.isMongo = false;
+    dbState.connected = true;
+    dbState.dbType = 'Vercel Serverless JSON DB';
+    dbState.message = 'Using local persistent JSON database in /tmp/data/db.json';
+    return false;
+  }
+
   if (isLocal) {
     const probeTimeout = process.env.NODE_ENV === 'test' ? 300 : 700;
     const isRunning = await probePort('127.0.0.1', 27017, probeTimeout);

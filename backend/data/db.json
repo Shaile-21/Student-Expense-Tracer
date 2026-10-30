@@ -69,6 +69,20 @@
       "themePreference": "dark",
       "createdAt": "2026-10-27T13:43:34.246Z",
       "updatedAt": "2026-10-27T13:45:43.249Z"
+    },
+    {
+      "_id": "26a25a463475f7443226b49e",
+      "name": "Shailender",
+      "email": "shaile8a.28@gmail.com",
+      "password": "$2a$10$KpJmf6UcSddaDHVB7sGh6O5UlJM0P2KGUYPtSnc17irpxFZ14pY/2",
+      "college": "Poornima university",
+      "monthlyAllowance": 10500,
+      "pocketMoneyDay": 1,
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "themePreference": "dark",
+      "createdAt": "2026-10-27T17:28:09.923Z",
+      "updatedAt": "2026-10-27T17:32:26.980Z"
     }
   ],
   "transactions": [
@@ -406,6 +420,36 @@
       "recurringId": null,
       "createdAt": "2026-10-27T13:49:50.817Z",
       "updatedAt": "2026-10-27T13:49:50.817Z"
+    },
+    {
+      "_id": "77dc0102c6e434ffab4b6556",
+      "user": "26a25a463475f7443226b49e",
+      "title": "hostel rent",
+      "amount": 7500,
+      "type": "expense",
+      "category": "Accommodation",
+      "date": "2026-10-01T00:00:00.000Z",
+      "paymentMethod": "UPI",
+      "notes": "",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-27T17:38:21.861Z",
+      "updatedAt": "2026-10-27T17:38:21.861Z"
+    },
+    {
+      "_id": "71cfdea3e25072f4a43dcfdb",
+      "user": "26a25a463475f7443226b49e",
+      "title": "milk and banana",
+      "amount": 800,
+      "type": "expense",
+      "category": "Food",
+      "date": "2026-10-27T00:00:00.000Z",
+      "paymentMethod": "UPI",
+      "notes": "",
+      "isRecurring": false,
+      "recurringId": null,
+      "createdAt": "2026-10-27T17:39:11.234Z",
+      "updatedAt": "2026-10-27T17:39:11.234Z"
     }
   ],
   "budgets": [
@@ -591,6 +635,53 @@
       "alertThreshold": 80,
       "createdAt": "2026-10-27T13:46:52.402Z",
       "updatedAt": "2026-10-27T13:46:52.402Z"
+    },
+    {
+      "_id": "3b4a3681307595fecf68a4db",
+      "user": "26a25a463475f7443226b49e",
+      "month": "2026-10",
+      "monthlyLimit": 10500,
+      "categoryLimits": [
+        {
+          "category": "Food",
+          "limit": 1200
+        },
+        {
+          "category": "Transport",
+          "limit": 300
+        },
+        {
+          "category": "Education",
+          "limit": 500
+        },
+        {
+          "category": "Accommodation",
+          "limit": 7500
+        },
+        {
+          "category": "Shopping",
+          "limit": 1000
+        },
+        {
+          "category": "Entertainment",
+          "limit": 500
+        },
+        {
+          "category": "Bills",
+          "limit": 0
+        },
+        {
+          "category": "Healthcare",
+          "limit": 0
+        },
+        {
+          "category": "Other",
+          "limit": 0
+        }
+      ],
+      "alertThreshold": 80,
+      "createdAt": "2026-10-27T17:28:50.126Z",
+      "updatedAt": "2026-10-27T17:35:26.684Z"
     }
   ],
   "savingsgoals": [
@@ -629,6 +720,19 @@
       "user": "1ec3289efaf68b559bb4ccaf",
       "createdAt": "2026-10-27T13:46:52.462Z",
       "updatedAt": "2026-10-27T13:46:52.462Z"
+    },
+    {
+      "_id": "ea8d1172e2986a3345fe275c",
+      "user": "26a25a463475f7443226b49e",
+      "title": "monthly saving",
+      "targetAmount": 5000,
+      "currentAmount": 1000,
+      "targetDate": "2027-03-31T00:00:00.000Z",
+      "category": "Other",
+      "notes": "",
+      "createdAt": "2026-10-27T17:36:53.429Z",
+      "updatedAt": "2026-10-27T17:40:01.168Z",
+      "isCompleted": false
     }
   ],
   "recurringexpenses": [
@@ -673,6 +777,48 @@
       "user": "1ec3289efaf68b559bb4ccaf",
       "createdAt": "2026-10-27T13:46:52.558Z",
       "updatedAt": "2026-10-27T13:46:52.558Z"
+    },
+    {
+      "_id": "22d8afd877981a9d5b726bba",
+      "title": "Hostel Room & Mess Payment",
+      "amount": 2800,
+      "category": "Accommodation",
+      "paymentMethod": "UPI",
+      "frequency": "monthly",
+      "nextDueDate": "2026-10-31T18:30:00.000Z",
+      "isActive": true,
+      "notes": "Pay by 5th to avoid late penalty",
+      "user": "26a25a463475f7443226b49e",
+      "createdAt": "2026-10-27T17:28:50.235Z",
+      "updatedAt": "2026-10-27T17:28:50.235Z"
+    },
+    {
+      "_id": "067f0453ee78150a37d2466f",
+      "title": "Hostel High-Speed WiFi Share",
+      "amount": 250,
+      "category": "Bills",
+      "paymentMethod": "UPI",
+      "frequency": "monthly",
+      "nextDueDate": "2026-11-04T18:30:00.000Z",
+      "isActive": true,
+      "notes": "Split among 4 flatmates",
+      "user": "26a25a463475f7443226b49e",
+      "createdAt": "2026-10-27T17:28:50.270Z",
+      "updatedAt": "2026-10-27T17:28:50.270Z"
+    },
+    {
+      "_id": "7c5bad281ca8291b274819cb",
+      "title": "Spotify Student Streaming",
+      "amount": 69,
+      "category": "Entertainment",
+      "paymentMethod": "UPI",
+      "frequency": "monthly",
+      "nextDueDate": "2026-11-09T18:30:00.000Z",
+      "isActive": true,
+      "notes": "Verified with college email ID",
+      "user": "26a25a463475f7443226b49e",
+      "createdAt": "2026-10-27T17:28:50.312Z",
+      "updatedAt": "2026-10-27T17:28:50.312Z"
     }
   ]
 }

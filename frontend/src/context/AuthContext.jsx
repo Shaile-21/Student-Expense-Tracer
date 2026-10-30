@@ -49,6 +49,18 @@ export const AuthProvider = ({ children }) => {
     fetchUser();
   }, []);
 
+  const safeJson = async (res) => {
+    const text = await res.text();
+    try {
+      return JSON.parse(text);
+    } catch (err) {
+      if (text.includes('<!DOCTYPE') || text.includes('<html') || text.includes('<head')) {
+        throw new Error(`API server returned HTML instead of JSON (${res.status}). Please ensure backend is running or Vercel serverless function is configured.`);
+      }
+      throw new Error(`Invalid response format from server (${res.status}): ${text.slice(0, 80)}`);
+    }
+  };
+
   const login = async (email, password) => {
     try {
       const res = await fetch('/api/auth/login', {
@@ -56,7 +68,7 @@ export const AuthProvider = ({ children }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
       });
-      const data = await res.json();
+      const data = await safeJson(res);
       if (!data.success) {
         throw new Error(data.message || 'Login failed');
       }
@@ -78,7 +90,7 @@ export const AuthProvider = ({ children }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userData)
       });
-      const data = await res.json();
+      const data = await safeJson(res);
       if (!data.success) {
         throw new Error(data.message || 'Registration failed');
       }
@@ -106,7 +118,7 @@ export const AuthProvider = ({ children }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: demoEmail, password: demoPassword })
       });
-      let data = await res.json();
+      let data = await safeJson(res);
 
       // If user doesn't exist, create demo account and seed sample data
       if (!data.success) {
@@ -122,11 +134,11 @@ export const AuthProvider = ({ children }) => {
             pocketMoneyDay: 1
           })
         });
-        data = await res.json();
+        data = await safeJson(res);
 
         if (data.token) {
           // Auto-seed demo data immediately
-          await fetch('/api/auth/seed-demo', {
+          const seedRes = await fetch('/api/auth/seed-demo', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -134,6 +146,7 @@ export const AuthProvider = ({ children }) => {
             },
             body: JSON.stringify({ clearExisting: true })
           });
+          await safeJson(seedRes);
         }
       }
 

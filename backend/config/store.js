@@ -3,12 +3,29 @@ const path = require('path');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const DATA_DIR = isServerless ? path.join('/tmp', 'data') : path.join(__dirname, '..', 'data');
 const DB_FILE = path.join(DATA_DIR, 'db.json');
 
 // Ensure data directory exists
 if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+  try {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  } catch (e) {
+    console.warn('Could not create data dir:', e.message);
+  }
+}
+
+// In serverless, copy initial seed db.json to /tmp if it doesn't exist
+if (isServerless && !fs.existsSync(DB_FILE)) {
+  const seedFile = path.join(__dirname, '..', 'data', 'db.json');
+  if (fs.existsSync(seedFile)) {
+    try {
+      fs.copyFileSync(seedFile, DB_FILE);
+    } catch (e) {
+      console.warn('Could not seed /tmp/data/db.json:', e.message);
+    }
+  }
 }
 
 // Initial DB structure
